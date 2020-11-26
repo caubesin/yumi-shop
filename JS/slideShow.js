@@ -31,11 +31,11 @@ window.onload = () => {
     }
 
     slides.style.transform = 'translateX(' + ( -size * slideIndex) + 'px)';
-    //let loop = setInterval(showSlides,5000);
+    let loop = setInterval(showSlides,10000);
 
     function resetInterval() {
         clearInterval(loop);
-        loop = setInterval(showSlides,5000);
+        loop = setInterval(showSlides,10000);
     }
 
     function addAnimation() {
