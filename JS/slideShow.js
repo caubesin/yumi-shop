@@ -31,11 +31,11 @@ window.onload = () => {
     }
 
     slides.style.transform = 'translateX(' + ( -size * slideIndex) + 'px)';
-    //let loop = setInterval(showSlides,5000);
+    let loop = setInterval(showSlides,10000);
 
     function resetInterval() {
         clearInterval(loop);
-        loop = setInterval(showSlides,5000);
+        loop = setInterval(showSlides,10000);
     }
 
     function addAnimation() {
@@ -53,9 +53,7 @@ window.onload = () => {
     addAnimation();
 
     function showSlides() {
-        slides.style.transition = "transform 0.6s ease-in-out";
-        slideIndex++;
-        slides.style.transform = 'translateX(' + ( -size * slideIndex) + 'px)';  
+        nextBtn.click();
     }
     function reAnimation() {
         for(var i = 0; i < animate.length ; i++) {
@@ -81,7 +79,6 @@ window.onload = () => {
     });
 
     slides.addEventListener('transitionstart',()=> {
-        console.log(slideIndex);
         switchDot();
         if(slideIndex >= slide.length) {
             slides.style.transition = "none";

@@ -1,0 +1,35 @@
+@media only screen and (max-width : 1500px) {
+/*---------index---------*/
+    .action-container {
+        width: 65%;
+    }
+
+    .collection__btn {
+        width: 70%;
+    }
+
+    .collection__btn a {
+        font-size: 14px;
+    }
+    
+    .collection-container p {
+        font-size: 17px;
+    }
+
+/*------------product-detail-----------*/
+    .seller-icon-name p{
+        font-size: 12px;
+    }
+
+    .add-product-to-cart__btn {
+        width: 40%;
+    }
+
+    .benefit-item p {
+        font-size: 12px;
+    }
+
+    .other-img ul li {
+        width: 18%;
+    }
+}

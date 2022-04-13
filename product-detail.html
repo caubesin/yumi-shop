@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumi Fashion</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/index-css.css">
+    <link rel="stylesheet" href="./CSS/product-detail-css.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./font/FA5PRO-master/css/all.min.css">
+</head>
+<body>
+<div class="head">
+        <div class="head-nav">
+            <div class="contact">
+                <div class="address">
+                    <i class="fas fa-map-marker-alt"></i> Trường đại học Cần Thơ
+                </div>
+                <div class="email-contact">
+                    <i class="far fa-envelope"></i>toanb1807677@student.ctu.edu.vn
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-pinterest-p"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a><a href="#"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+        <div class="head-container">
+            <div class="oder-number">
+                <p>HOTLINE ĐẶT HÀNG : <strong>0123 456 789</strong></p>
+            </div>
+
+            <div class="shop-name">
+                <a href="./index.html"><img src="./Img/logo11.png" alt=""></a>
+            </div>
+            <div class="right-item">
+                <ul class="search-shopping_cart">
+                    <li class="cart-user">
+                        <a href="#"><i class="far fa-user" style="font-size: 20px;"></i></a>
+                        <ul>
+                            <li><a href="#">Đăng ký</a></li>
+                            <li><a href="#">Đăng nhập</a></li>
+                        </ul>
+                    </li>
+                    <li class="cart-product">
+                        <a href="#"><i class="fas fa-shopping-bag" style="font-size: 20px;"></i></a><span id="cart-number">0</span>
+                        <div class="mini-cart-sub">
+                            <div class="cart-product-sub">
+                                <!--<div class="single-cart" >
+                                    <a href="#">
+                                        <div class="cart-img">
+                                            <img src="./Img/img101.jpg" alt="">
+                                        </div>
+                                        <div class="cart-inf">
+                                            <h5>Joust Duffle Bag</h5>
+                                            <p class="price">1 x 600.000</p>
+                                        </div>
+                                        <div class="delete-btn">
+                                            <button type="button" class="btn" name="0">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="single-cart">
+                                    <a href="#">
+                                        <div class="cart-img">
+                                            <img src="./Img/img101.jpg" alt="">
+                                        </div>
+                                        <div class="cart-inf">
+                                            <h5>Joust Duffle Bag</h5>
+                                            <p class="price">1 x 600.00</p>
+                                        </div>
+                                        <div class="delete-btn"><button type="button" class="btn" onclick = "removeCart(1);" name="1"><i class="fas fa-trash-alt"></i></button></div>
+                                    </a>
+                                </div>-->
+                            </div>
+                            <div class="cart-total"></div>
+                            <div class="cart-pay">
+                                <a href="#">Thanh toán</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fa fa-search" style="font-size: 20px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-menu">
+            <ul class="nav-link">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li>
+                    <a href="#">GIỚI THIỆU <i class="fas fa-angle-down" id="angle-down"></i></a>
+                    <ul class="sub-menu sub-menu-1">
+                        <li><a href="#">Chính sách đổi hàng</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li id="last-item"><a href="#">Hệ thống cửa hàng</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ÁO <i class="fas fa-angle-down" id="angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Áo Hoodie</a></li>
+                        <li><a href="#">Áo T-Shirt</a></li>
+                        <li><a href="#">Áo Khoác</a></li>
+                        <li><a href="#">Áo Sơ Mi</a></li>
+                        <li id="last-item"><a href="#">Áo Len</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">QUẦN <i class="fas fa-angle-down" id="angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Quần Tây</a></li>
+                        <li><a href="#">Quần Jean</a></li>
+                        <li><a href="#">Quần Baggy</a></li>
+                        <li><a href="#">Quần Lửng</a></li>
+                        <li><a href="#">Quần Yếm</a></li>
+                        <li id="last-item"><a href="#">Quần Sooc</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">VÁY <i class="fas fa-angle-down" id="angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Váy Liền</a></li>
+                        <li><a href="#">Váy Bộ</a></li>
+                        <li><a href="#">Váy Yếm</a></li>
+                        <li><a href="#">Chân Váy Ngắn</a></li>
+                        <li id="last-item"><a href="#">Chân Váy Dài</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PHỤ KIỆN <i class="fas fa-angle-down" id="angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Vòng Tay</a></li>
+                        <li><a href="#">Mũ</a></li>
+                        <li><a href="#">Khăn Choàng</a></li>
+                        <li><a href="#">Giày</a></li>
+                        <li id="last-item"><a href="#">Găng Tay</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="order-product">
+        <div class="order-container">
+            <div class="order-container-img">
+                <div class="main-img">
+                    <img src="" alt="">
+                </div>
+                <div class="other-img">
+                    <ul>
+                        <li><img src="./Img/product-img-1.jpg" alt="" id="active-img"></li>
+                        <li><img src="./Img/product-img-2.jpg" alt=""></li>
+                        <li><img src="./Img/product-img-3.jpg" alt=""></li>
+                        <li><img src="./Img/product-img-4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-center"></div>
+            <div class="order-container-inf">
+                <div class="order-container-inf__header">
+                    <h6>Thương hiệu : YUMI</h6>
+                    <div class="product-title">
+                        <h1><i class="fas fa-signature"></i>ÁO THUN CROPTOP RÚT DÂY TRƠN FORM RỘNG TAY DÀI - ÁO NHÓM CROP 5</h1>
+                        <div class="product-title__btn">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-share-alt"></i>
+                        </div>
+                    </div>
+                    <div class="ev">
+                        <div class="ev-star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#reviews">(Xem tất cả đánh giá)</a>
+                    </div>
+                </div>
+                <div class="order-container-inf__body">
+                    <div class = "price-and-dec">
+                        <div class="order-price">
+                            <div class="order-price__item">
+                                <p class="product-price__current-price">50.000 &#8363;</p>
+                                <p class="product-price__list-price">20.000 &#8363;</p>
+                            </div>
+                            <div class="percent">
+                                <p><i class="fa fa-tags"></i>Giảm giá 30%</p>
+                            </div> 
+                        </div>
+                        <div class="dec">
+                            <p>Áo thun croptop form rộng tay dài ulzzang, áo nhóm crop dài tay xịn sò, hình thật, model của shop chúng tớ mặc thật 100%, lại có feedback nữa, ngại gì ko mua thử 1 lần để rồi mua hoài luôn ^^.</p>
+                        </div>
+                        <div class="deliver-add">
+                            Bạn hãy <span>NHẬP ĐỊA CHỈ</span> nhận hàng để được dự báo thời gian & chi phí giao hàng một cách chính xác nhất.
+                        </div>
+                    </div>
+                    <div class="seller">
+                        <div class="seller-inf">
+                            <div class="seller-icon-name">
+                                <p>Cam kết chính hiệu bởi</p>
+                                <div class="icon-name">
+                                    <img src="./Img/seller-icon.png" alt="">
+                                    <p>Yumi Fashion</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit-item">
+                                    <i class="far fa-shield-check"></i>
+                                    <p>Hoàn tiền 111% nếu giả</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="far fa-box-check"></i>
+                                    <p>Mở hộp kiểm tra nhận hàng</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="far fa-retweet"></i>
+                                    <p>Đổi trả trong 30 ngày nếu sp lỗi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-container-inf__bottom">
+                    <div class="amount-box">
+                        <label for="amount">Số lượng</label>
+                        <div class="amount-ip">
+                            <button class="icon-remove"><img src="./Img/icons-remove.svg" alt=""></button>
+                            <input type="text" name="amount" id="amount" value="1">
+                            <button class="icon-add"><img src="./Img/icons-add.svg" alt=""></button>
+                            <p>( <span>7</span>&nbsp;sản phẩm có sẵn )</p>
+                        </div>
+                    </div>
+                    <button type="button" title="Thêm vào giỏ" class="add-product-to-cart__btn">
+                        <span>Thêm vào giỏ</span>
+                        <i class="fal fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title-panel">
+        <div class="title-panel-container">
+            <p>THÔNG TIN CHI TIẾT</p>
+        </div>
+    </div>
+    <div class="detail-inf">
+        <div class="detail-inf-container">
+            <table>
+                <tr>
+                    <td>Thương hiệu</td>
+                    <td>Yumi</td>
+                </tr>
+                <tr>
+                    <td>Xuất xứ thương hiệu</td>
+                    <td>Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>Xuất xứ</td>
+                    <td>Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>Chất liệu</td>
+                    <td>Thun</td>
+                </tr>
+            </table>
+            <h4>[CHI TIẾT VỀ SẢN PHẨM]</h4>
+            <p>Chất liệu: áo thun dày mịn, cực êm</p>
+            <p>Size và form: free size dưới 60kg.</p>
+            <p>Được cái áo này dễ hợp dáng lắm nha, mix quần jeans, kaki hay chân váy đều chuẩn <3</p>
+            <h4>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Tuy nhiên tuỳ vào từng loại sản phẩm hoặc phương thức, địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, ...</h4>
+        </div>
+    </div>
+    <div class="title-panel">
+        <div class="title-panel-container">
+            <p>KHÁCH HÀNG NHẬN XÉT</p>
+        </div>
+    </div>
+    <div class="detail-inf">
+        <div class="detail-inf-container">
+            <h4>[NHẬN XÉT CỦA KHÁCH HÀNG]</h4>
+            <h5>Không có đánh giá nào trước đó về sản phẩm</h5>
+            <h5>Đăng nhập để đánh giá về sản phẩm</h5>
+            <h4>[ĐÁNH GIÁ VỀ SẢN PHẨM]</h4>
+            <div class="review">
+                <div class="vote-star">
+                    <h3>Đánh giá của bạn :</h3>
+                    <ul>
+                        <li value="1">1<i class="fal fa-star"></i></li>
+                        <li value="2">2<i class="fal fa-star"></i></li>
+                        <li value="3">3<i class="fal fa-star"></i></li>
+                        <li value="4">4<i class="fal fa-star"></i></li>
+                        <li value="5">5<i class="fal fa-star"></i></li>
+                    </ul>
+                </div>
+                <h3>Nhận xét của bạn về sản phẩm :</h3>
+                <textarea type="text" placeholder="Nhập nhận xét của bạn..."></textarea>
+                <button>Nhận xét</button>
+            </div>
+        </div>
+    </div>
+    <div class="title-panel">
+        <div class="title-panel-container">
+            <p>HỎI ĐÁP VỂ SẢN PHẨM</p>
+        </div>
+    </div>
+    <div class="detail-inf">
+        <div class="detail-inf-container">
+            <h4><a href="#">Xem tất cả câu hỏi đã được trả lời</a></h4>
+            <div class="input-qs">
+                <input type="text" placeholder="Hãy đặt câu hỏi liên quan đến sản phẩm...">
+                <button type="submit">Gửi câu hỏi</button>
+            </div>
+        </div>
+    </div>
+    <div class="title-panel">
+        <div class="title-panel-container">
+            <p>SẢN PHẨM TƯƠNG TỰ</p>
+        </div>
+    </div>
+    <div class="detail-inf">
+        <div class="detail-inf-container">
+            
+        </div>
+    </div>
+    <div class="newslaterr-area">
+        <div class="container">
+            <div class="newlatter-content">
+                <h6>Special Offers For Subscribers</h6>
+                <h3>Ten Percent Member Discount</h3>
+                <p>Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email address here...">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-footer">
+            <div class="footer-item-1">
+                <img src="./Img/logo11.png" alt="">
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+                <p style="color: black;"><strong>Follow Us On Social:</strong></p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-pinterest-p"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a><a href="#"><i class="fas fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="footer-item-2">
+                <div class="footer-item-2_item">
+                    <p>Opening Time</p>
+                    <ul>
+                        <li><p>Mon - Fri: 8AM - 10PM</p></li>
+                        <li><p>Sat: 9AM-8PM</p></li>
+                        <li><p>Sun: Closed</p></li>
+                        <li><p><strong style="color: black;">We Work All The Holidays</strong></p></li>
+                    </ul>
+                </div>
+                <div class="footer-item-2_item">
+                    <p>Information</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Information link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item-2_item">
+                    <p>Customer Service</p>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Brands</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="copy-right">
+            <p>Copyright © 2020 <a href="#">caubesin</a>. All Right Reserved</p>
+        </div>
+        <div class="bottom-footer-menu">
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <script lang="javascript" src="./JS/poduct-detail-js.js"></script>
+    <script lang="javascript" src="./JS/cart.js"></script>
+</body>
+</html>
